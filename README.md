@@ -3,7 +3,7 @@
 ## What is this?
 
 This project is one exercise in building up an intuition about how to write
-more and more complex software using denotational and algebraic design.
+software using denotational and algebraic design.
 
 This is the first program.
 
