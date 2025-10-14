@@ -1,0 +1,76 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.33.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: c15fc454257f7975fef9ab4814b7bdd8530a50d8da9076d6ff5a7597eaa8b2cc
+
+name:           add1
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/githubuser/add1#readme>
+homepage:       https://github.com/githubuser/add1#readme
+bug-reports:    https://github.com/githubuser/add1/issues
+author:         Author name here
+maintainer:     example@example.com
+copyright:      2021 Author name here
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    ChangeLog.md
+
+source-repository head
+  type: git
+  location: https://github.com/githubuser/add1
+
+library
+  exposed-modules:
+      Lib
+      NumberStore
+      Step1
+      Step2point5
+      Step3
+  other-modules:
+      Paths_add1
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.7 && <5
+    , mtl
+    , text
+  default-language: Haskell2010
+
+executable add1-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_add1
+  hs-source-dirs:
+      app
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      add1
+    , base >=4.7 && <5
+    , mtl
+    , text
+  default-language: Haskell2010
+
+test-suite add1-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      LibSpec
+      NumberStoreSpec
+      Paths_add1
+  hs-source-dirs:
+      test
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      QuickCheck
+    , add1
+    , base >=4.7 && <5
+    , hspec
+    , mtl
+    , text
+  default-language: Haskell2010
