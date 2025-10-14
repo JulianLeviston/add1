@@ -11,6 +11,11 @@ It is a tool that reads some positive integers (ie the naturals including 0) int
 taking line based commands, and can show what's been put into the store in insertion order, and also
 work out their sum, product, and statistical mean based on standard arithmetic.
 
+Note that there are a number of Haskell source files that start with Step in the `src` directory.
+These are historical versions of the core semantics, illustrative of the steps taken to arrive at the
+current version. They may provide some useful insight as process documentation for how we arrived at
+the current version.
+
 ## Why Denotational Design?
 
 In denotational and algebraic design, the semantics reign supreme and the equations enforce the semantics.
@@ -32,5 +37,5 @@ easily swap it out to use Text later, gaining speed and efficiency without chang
 at all. Separating the semantic from the operational layer of the program is potentially a massive boon, especially for encouraging
 and maintaining more modular and bug-free software.
 
-For some background, see Conal Elliott's work, in particular [Denotational design with type class morphisms](https://www.cs.tufts.edu/~nr/cs257/archive/conal-elliott/type-class-morphisms-long.pdf) and also [Lambda the Ultimate article on it](http://lambda-the-ultimate.org/node/3215). Also the book [Algebra Driven Design](https://leanpub.com/algebra-driven-design) by Sandy Macguire. 
+For some background, see [Conal Elliott](http://conal.net)'s work, in particular [Denotational design with type class morphisms](https://www.cs.tufts.edu/~nr/cs257/archive/conal-elliott/type-class-morphisms-long.pdf) and the [Lambda the Ultimate article on it](http://lambda-the-ultimate.org/node/3215). Also the book [Algebra Driven Design](https://leanpub.com/algebra-driven-design) by Sandy Macguire. 
 
