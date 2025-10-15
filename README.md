@@ -5,15 +5,16 @@
 This project is one exercise in building up an intuition about how to write
 software using denotational and algebraic design.
 
-This is the first program.
+It allows us to store a set of numbers (positive integers including 0) and
+provide "statistics" on them, which are mathematical operations.
+This all takes place via a line-based command line interface.
+It can show what's been put into the store in insertion order, and also
+work out the sum, product, and statistical mean of the items in the store,
+based on standard arithmetic.
 
-It is a tool that reads some positive integers (ie the naturals including 0) interactively via the CLI,
-taking line based commands, and can show what's been put into the store in insertion order, and also
-work out their sum, product, and statistical mean based on standard arithmetic.
-
-Note that there are a number of Haskell source files that start with Step in the `src` directory.
-These are historical versions of the core semantics, illustrative of the steps taken to arrive at the
-current version. They may provide some useful insight as process documentation for how we arrived at
+Note that there are a number of Haskell source files that start with "Step" in the `src` directory.
+These are historical versions, illustrative of the steps taken to arrive at the current version.
+They hopefully provide some useful insight as process documentation for how we arrived at
 the current version.
 
 ## Why Denotational Design?
