@@ -1,0 +1,16 @@
+{
+  "folders": [
+    { "path": "agda" },
+    { "path": "." }
+  ],
+  "settings": {
+    "agda.executablePath": "/usr/local/bin/agda",
+    "agda.extraArgs": [
+      "--no-libraries",
+      "-i",
+      "agda/src",
+      "-i",
+      "agda/stdlib/src"
+    ]
+  }
+}
