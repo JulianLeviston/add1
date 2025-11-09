@@ -1,0 +1,22 @@
+{
+  "name": "Add1 Agda Dev",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "workspaceFolder": "/workspace",
+  "mounts": [
+    "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached"
+  ],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "banacorn.agda-mode"
+      ],
+      "settings": {
+        "agdaMode.connection.agda": "/usr/local/bin/agda",
+        "agdaMode.connection.local": true,
+        "agdaMode.connection.libraryFile": "/workspace/add1.agda-lib"
+      }  
+    }
+  }
+}
