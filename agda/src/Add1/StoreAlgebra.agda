@@ -14,8 +14,6 @@ record IsStore {ℓ : Level} {A : Set ℓ} (raw : RawStore A) : Set (suc ℓ) wh
   open RawStore raw
   field
     fold-empty : ∀ {B : Set ℓ} (f : A → B → B) (z : B) → fold f z empty ≡ z
-    fold-insert : ∀ {B : Set ℓ} (f : A → B → B) (z : B) x s → 
-                  fold f z (insert x s) ≡ f x (fold f z s)
 
 module MakeStore {ℓ : Level} {A : Set ℓ}
                  (Container : Set ℓ → Set ℓ)
