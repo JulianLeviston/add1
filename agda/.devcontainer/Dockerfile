@@ -29,4 +29,3 @@ WORKDIR /workspace
 RUN rm -rf /tmp/agda
 RUN echo "Cleanup complete"
 
-WORKDIR /workspace
